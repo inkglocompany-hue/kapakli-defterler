@@ -13,7 +13,16 @@ a{text-decoration:none;color:inherit}
 .hero-logo{position:absolute;top:42px;left:26px;display:flex;flex-direction:column;align-items:center}
 .hero-logo img{width:185px;max-height:62px;object-fit:contain}
 #logoFallback{display:none;font-size:24px;font-weight:800;letter-spacing:.06em;color:#123b63}
-.hero-logo small{font-size:11px;letter-spacing:.18em;margin-top:3px}
+.nfc-badge{margin-top:10px;display:flex;align-items:center;gap:7px;padding:6px 10px 6px 7px;border:1px solid rgba(21,111,166,.18);border-radius:999px;background:rgba(255,255,255,.76);backdrop-filter:blur(8px);box-shadow:0 4px 14px rgba(21,90,130,.08);font-size:9px;font-weight:800;letter-spacing:.14em;color:#155b82}
+.nfc-waves{width:23px;height:23px;position:relative;display:block}
+.nfc-waves i{position:absolute;inset:0;border:1.5px solid #1783bd;border-radius:50%;opacity:0;animation:nfcPulse 2.4s ease-out infinite}
+.nfc-waves i:nth-child(2){animation-delay:.45s}.nfc-waves i:nth-child(3){animation-delay:.9s}
+.nfc-waves:after{content:"";position:absolute;width:5px;height:5px;left:9px;top:9px;border-radius:50%;background:#1783bd;box-shadow:0 0 0 4px rgba(23,131,189,.08)}
+@keyframes nfcPulse{0%{transform:scale(.35);opacity:.85}70%{transform:scale(1);opacity:0}100%{transform:scale(1);opacity:0}}
+.nfc-message{display:inline-flex;align-items:center;gap:7px;margin-bottom:8px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.72);color:#145a82;font-size:10px;font-weight:600;box-shadow:0 3px 10px rgba(30,80,110,.05)}
+.nfc-dot{width:6px;height:6px;border-radius:50%;background:#1685bd;box-shadow:0 0 0 5px rgba(22,133,189,.10);animation:nfcDot 1.8s ease-in-out infinite}
+@keyframes nfcDot{0%,100%{transform:scale(.9);opacity:.65}50%{transform:scale(1.2);opacity:1}}
+
 .hero-copy{position:absolute;left:27px;bottom:25px}
 .hero-copy h1{margin:0;font-size:20px;line-height:1.24;letter-spacing:-.035em;font-weight:500}
 .hero-copy strong{font-weight:800}
@@ -33,5 +42,5 @@ a{text-decoration:none;color:inherit}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:12px;padding:15px 5px;border:1px solid #d6ebf6;border-radius:18px;background:#eaf7ff}.stats div{text-align:center;border-right:1px solid #cce3ef}.stats div:last-child{border:0}.stats b{display:block;font-size:14px;color:#1472aa}.stats span{display:block;margin-top:4px;font-size:8.5px;color:var(--muted);line-height:1.2}
 .locations{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.location{display:grid;grid-template-columns:28px 1fr;gap:7px;padding:11px;border:1px solid var(--line);border-radius:15px;background:#fff}.location-icon{font-size:17px;color:#1681b8}.location b{display:block;font-size:10px}.location small{display:block;margin-top:4px;color:var(--muted);font-size:8px;line-height:1.4}
 footer{text-align:center;padding:20px 6px 0}.footer-logo{font-size:17px;font-weight:800;letter-spacing:.08em}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin-top:8px;color:#1472aa;font-size:9px}.footer-links a{padding:2px 0}footer p{margin:7px 0 0;color:var(--muted);font-size:8.5px}
-@media(max-width:390px){.app{padding-left:9px;padding-right:9px}.hero-image{height:360px}.hero-logo{left:20px}.hero-logo img{width:165px}.hero-copy{left:21px}.hero-copy h1{font-size:18px}.link-card{grid-template-columns:48px minmax(0,1fr) 82px 14px;padding-right:9px}.thumb{width:82px;height:49px}.icon{width:39px;height:39px}.copy b{font-size:13px}.copy small{font-size:9.5px}.locations{grid-template-columns:1fr}}
+@media(max-width:390px){.nfc-message{font-size:9px}.nfc-badge{margin-top:8px}.app{padding-left:9px;padding-right:9px}.hero-image{height:360px}.hero-logo{left:20px}.hero-logo img{width:165px}.hero-copy{left:21px}.hero-copy h1{font-size:18px}.link-card{grid-template-columns:48px minmax(0,1fr) 82px 14px;padding-right:9px}.thumb{width:82px;height:49px}.icon{width:39px;height:39px}.copy b{font-size:13px}.copy small{font-size:9.5px}.locations{grid-template-columns:1fr}}
 @media(min-width:700px){body{padding:28px 0}.app{border-radius:28px;box-shadow:0 20px 70px rgba(24,83,116,.15)}}
