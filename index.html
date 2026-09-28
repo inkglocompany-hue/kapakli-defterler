@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4fbff">
+  <meta name="description" content="Nur Ajanda NFC bağlantı merkezi">
+  <title>Nur Ajanda | NFC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+
+    <section class="hero">
+      <div class="hero-image">
+        <img id="heroProduct" src="assets/hero-product.jpg" alt="Nur Ajanda ürün görseli">
+        <div class="hero-placeholder" id="heroPlaceholder">
+          <span>ÜRÜN GÖRSELİ</span>
+          <small>assets/hero-product.jpg</small>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-logo">
+          <img id="logo" src="assets/logo.png" alt="Nur Ajanda logosu">
+          <div id="logoFallback">NUR AJANDA</div>
+          <small>Since 2007</small>
+        </div>
+        <div class="hero-copy">
+          <h1>Defter, Ajanda<br>ve Promosyon Ürünlerinde<br><strong>Güvenilir Üretim Ortağınız</strong></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Nur Ajanda hızlı bağlantıları">
+      <a class="link-card" href="https://www.nurajanda.com" target="_blank" rel="noopener">
+        <span class="icon blue">⌾</span>
+        <span class="copy"><b>Websitemiz</b><small>Ürünlerimizi inceleyin</small></span>
+        <img src="assets/website.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="https://www.instagram.com/nurajandaa/" target="_blank" rel="noopener">
+        <span class="icon instagram">◎</span>
+        <span class="copy"><b>Instagram</b><small>@nurajandaa</small></span>
+        <img src="assets/instagram.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="https://www.youtube.com/watch?v=gAahfKhz2x4" target="_blank" rel="noopener">
+        <span class="icon red">▶</span>
+        <span class="copy"><b>Üretim Videomuz</b><small>Defterlerimiz nasıl üretiliyor?</small></span>
+        <img src="assets/production.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#" data-url="catalog">
+        <span class="icon blue">▣</span>
+        <span class="copy"><b>Katalogumuzu İnceleyin</b><small>Tüm ürünlerimiz tek yerde</small></span>
+        <img src="assets/catalog.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#" data-url="factory">
+        <span class="icon teal">⌖</span>
+        <span class="copy"><b>Fabrika Konumumuz</b><small>Üretim merkezimize yol tarifi</small></span>
+        <img src="assets/factory.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#" data-url="showroom">
+        <span class="icon blue">▤</span>
+        <span class="copy"><b>Showroom &amp; Ofis</b><small>Ziyaretiniz için yol tarifi</small></span>
+        <img src="assets/showroom.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#" data-url="whatsapp">
+        <span class="icon green">◔</span>
+        <span class="copy"><b>WhatsApp ile İletişim</b><small>Hızlı teklif alın</small></span>
+        <img src="assets/whatsapp.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="mailto:info@nurajanda.com">
+        <span class="icon blue">✉</span>
+        <span class="copy"><b>Bize Ulaşın</b><small>info@nurajanda.com</small></span>
+        <img src="assets/contact.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#products">
+        <span class="icon orange">◆</span>
+        <span class="copy"><b>Öne Çıkan Ürünler</b><small>Popüler modellerimizi görün</small></span>
+        <img src="assets/products.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link-card" href="#product-info">
+        <span class="icon navy">⌗</span>
+        <span class="copy"><b>Bu Ürün Hakkında</b><small>Model bilgilerini inceleyin</small></span>
+        <img src="assets/product-info.jpg" alt="" class="thumb" onerror="this.style.display='none'">
+        <span class="arrow">›</span>
+      </a>
+    </section>
+
+    <section class="info-panel" id="product-info">
+      <div class="section-title">
+        <span class="mini-icon">i</span>
+        <div><b>Bu Ürün Hakkında</b><small>NFC okutulan ürüne özel bilgiler</small></div>
+      </div>
+      <div class="product-grid">
+        <div><span>Model</span><b id="productModel">Van Gogh Temalı Defter</b></div>
+        <div><span>Ölçü</span><b id="productSize">13 × 21 cm</b></div>
+        <div><span>İç Sayfa</span><b id="productPages">192 çizgili sayfa</b></div>
+        <div><span>Kağıt</span><b id="productPaper">80 gr Ivory</b></div>
+      </div>
+    </section>
+
+    <section class="about" id="products">
+      <div class="section-title">
+        <span class="mini-icon star">★</span>
+        <div><b>Neden Nur Ajanda?</b><small>Üretim gücümüz ve deneyimimiz</small></div>
+      </div>
+      <p>Defter, ajanda, promosyon ürünleri ve matbaa çözümlerini kendi üretim altyapımızla hazırlıyoruz.</p>
+    </section>
+
+    <section class="stats">
+      <div><b>2007</b><span>Kuruluş</span></div>
+      <div><b>40</b><span>Kişilik ekip</span></div>
+      <div><b>3260 m²</b><span>Kapalı üretim alanı</span></div>
+      <div><b>32</b><span>Sektör deneyimi</span></div>
+    </section>
+
+    <section class="locations">
+      <a href="#" data-url="factory" class="location">
+        <span class="location-icon">⌖</span>
+        <span><b>Fabrika</b><small>Maltepe Mah. Hastane Yolu Sk. No:6 Kat 1-2-3-4<br>34010 Zeytinburnu / İstanbul</small></span>
+      </a>
+      <a href="#" data-url="showroom" class="location">
+        <span class="location-icon">▤</span>
+        <span><b>Showroom &amp; Ofis</b><small>Davutpaşa Caddesi Kazım Dinçöl San. Sit. No:81/132<br>Zeytinburnu / İstanbul</small></span>
+      </a>
+    </section>
+
+    <footer>
+      <div class="footer-logo">NUR AJANDA</div>
+      <div class="footer-links">
+        <a href="tel:+902125677803">0212 567 78 03</a>
+        <a href="tel:+905533330687">0553 333 06 87</a>
+        <a href="mailto:info@nurajanda.com">info@nurajanda.com</a>
+      </div>
+      <p>Defter • Ajanda • Promosyon • Matbaa</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
